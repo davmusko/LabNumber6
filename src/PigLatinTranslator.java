@@ -13,7 +13,7 @@ public class PigLatinTranslator {
 			Scanner scan = new Scanner(System.in);
 			userPhrase = TranslatorApp.lowerCaser(scan);
 			userPhraseSplit = TranslatorApp.phraseSplitter(userPhrase);
-			userPhraseInPig = TranslatorApp.toPigLatiner(userPhraseSplit);
+			userPhraseInPig = TranslatorApp.vowelOrConsonantWordSelector(userPhraseSplit);
 			
 			
 			for (int i = 0; i < userPhraseInPig.length; i++) {
